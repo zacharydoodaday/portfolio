@@ -1,16 +1,16 @@
 # GitHub Pages Configuration
 
 # Site settings
-title: "My GitHub Pages Site"
-description: "A simple site hosted on GitHub Pages"
-author: "Your Name"
+title: "Zach Wan's Portfolio"
+description: "A coding portfolio hosted on GitHub Pages"
+author: "Zach Wan"
 
 # Theme (choose one from GitHub-supported themes)
 theme: jekyll-theme-cayman  # or jekyll-theme-minimal, jekyll-theme-modernist, etc.
 
 # URL settings
 baseurl: "" # If hosted under a subpath, specify like "/my-repo"
-url: "https://your-username.github.io"
+url: "https://zacharydoodaday.github.io"
 
 # Build settings
 markdown: kramdown
