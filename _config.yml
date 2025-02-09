@@ -1,1 +1,34 @@
-theme: jekyll-theme-architect
+# GitHub Pages Configuration
+
+# Site settings
+title: "My GitHub Pages Site"
+description: "A simple site hosted on GitHub Pages"
+author: "Your Name"
+
+# Theme (choose one from GitHub-supported themes)
+theme: jekyll-theme-cayman  # or jekyll-theme-minimal, jekyll-theme-modernist, etc.
+
+# URL settings
+baseurl: "" # If hosted under a subpath, specify like "/my-repo"
+url: "https://your-username.github.io"
+
+# Build settings
+markdown: kramdown
+
+# Plugins (GitHub Pages supports these by default)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation (for themes supporting it)
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+
+# Exclude unnecessary files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
