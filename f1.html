@@ -31,8 +31,35 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Formula One Data Transformation</h1>
-							<span class="image left"><img src="images/f1_data_description.PNG" alt="" /><p></p><img src="images/f1_red_bull.jpg" alt="" /></span>
+							<p>Disclaimer: Due to data privacy and confidentiality requirements, limited information will be provided about this project.</p>
+							<span class="image"><img src="images/f1_data_description.PNG" alt="" />
 							<p></p>
+							<section>
+								<h3>Tasks Performed</h3>
+								<ul>
+									<li><i>Aggregating</i> data by combining multiple files into a single data set with shared variable names.</li>
+									<li><i>Filtering</i> by removing data points collected from outside Sector 1 of the lap. Also lap records that had an insufficient quantity of data points, which wouldn't offer beneficial information.</li>
+									<li><i>Interpolation</i> to determine which laps remained within track limits, enabling us to filter out any invalid laps where the driver went off course.</li>
+									<li><i>Variable creation</i> was utilised to offer more informative variables for future modelling and queries. For example, a single braking variable from the aggregated data was split into three; the moment before braking begun, the moment when braking was initiated, and the moment when braking was at maximum.</li>
+									<li><i>Handling unstandardised data</i> was required since not every lap reading had a data point at a shared start and end point of the track. Interpolation between nearby data points was used to solve this issue, enabling estimations of when every record crossed the shared starting and end lines.</li>
+								</ul>
+								<h3>Reflection</h3>
+								<p>
+									Overall, I was pleased with the final product that my team produced. 
+									Collaborating on <i>EDAs</i> enabled us to generate insightful findings which we were able to showcase in our completed database. 
+									I was able to gain a lot of experience transforming raw data into an informative dataset and also learned about different interpolation techniques which I can use in my future projects to make calculated estimations.
+								</p>
+								<h3>Contributors</h3>
+								<ul>
+									<li>Tonia Li</li>
+									<li>Harsh Charu Murali</li>
+									<li>Branko Stajic</li>
+									<li>Alex Yang Zhu</li>
+									<li>Zach Wan</li>
+									<li>UNSW Sydney</li>
+									<li>Oracle</li>
+								</ul>
+							</section>
 						</div>
 					</div>
 
