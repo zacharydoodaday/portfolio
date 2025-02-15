@@ -40,14 +40,14 @@
 									<li><i>Preliminary data analysis (confusion matrices and precision score comparisons)</i> were used to identify which type of devices were prone to misclassifications. This insight made us aware about how shared characteristics within device classes could lead to misclassifications. For example, how two different brands of security cameras can share many similar IoT features such as bandwidth transmission, hence appearing similar to each other which can cause the different brands to be misclassified.</li>
 									<li><i>Feature importance testing</i> was performed to identify both irrelevant and high importance features in the dataset.</li>
 									<li><i>Sampling techniques</i>, particularly stratified sampling (both with and without replacement) and a sliding window, were coded to analyse the change in each models' accuracy over time and determine how often the models would need to be retrained when accuracy drops.</li>
-									<li><i>Model design and testing</i> was the main focus of the project. The following models were used:
+									<li><i>Model design</i>. The following models were used:</li>
 									<ul>
 										<li>Random Forest</li>
 										<li>XGBoost with both Lasso (L1) and Ridge (L2) regularisation</li>
 										<li>Gradient Boosting Classifier (GBM) with optimised learning rate, tree depth and number of trees</li>
 										<li>LightGBM</li>
 									</ul>
-									These models were evaluated and compared to eachother based on factors including; device classification accuracy, weighted average F1 score, training and run time, and recall.
+									<li><i>Model evaluation</i>. These models were evaluated and compared to eachother based on factors including; device classification accuracy, weighted average F1 score, training and run time, and recall.</li>
 								</ul>
 								<h3>Reflection</h3>
 								<p>
