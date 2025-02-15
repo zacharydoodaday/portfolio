@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Zach Wan's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/zedvance_icon.jpg" alt="" /></span><span class="title">Zach Wan's Portfolio</span>
+								</a>
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>IN PROGRESS</h1>
+							<p>Disclaimer: Due to data privacy and confidentiality requirements, limited information will be provided about this project.</p>
+							<span class="image"><img src="images/iot_data_description.PNG" alt="" />
+							<p></p>
+							<section>
+								<h3>Tasks Performed</h3>
+								<ul>
+									<li><i>Preliminary data analysis (confusion matrices and precision score comparisons)</i> were used to identify which type of devices were prone to misclassifications. This insight made us aware about how shared characteristics within device classes could lead to misclassifications. For example, how two different brands of security cameras can share many similar IoT features such as bandwidth transmission, hence appearing similar to each other which can cause the different brands to be misclassified.</li>
+									<li><i>Feature importance testing</i> was performed to identify both irrelevant and high importance features in the dataset.</li>
+									<li><i>Sampling techniques</i>, particularly stratified sampling (both with and without replacement) and a sliding window, were coded to analyse the change in each models' accuracy over time and determine how often the models would need to be retrained when accuracy drops.</li>
+									<li><i>Model design and testing</i> was the main focus of the project. The following models were used:
+									<ul>
+										<li>Random Forest</li>
+										<li>XGBoost with both Lasso (L1) and Ridge (L2) regularisation</li>
+										<li>Gradient Boosting Classifier (GBM) with optimised learning rate, tree depth and number of trees</li>
+										<li>LightGBM</li>
+									</ul>
+									These models were evaluated and compared to eachother based on factors including; device classification accuracy, weighted average F1 score, training and run time, and recall.
+								</ul>
+								<h3>Reflection</h3>
+								<p>
+									Overall, I was pleased with the final product that my team produced. 
+									Collaborating on <i>EDAs</i> enabled us to generate insightful findings which we were able to showcase in our completed database. 
+									I was able to gain a lot of experience transforming raw data into an informative dataset and also learned about different interpolation techniques which I can use in my future projects to make calculated estimations.
+								</p>
+								<h3>Contributors</h3>
+								<ul>
+									<li>Tonia Li</li>
+									<li>Harsh Charu Murali</li>
+									<li>Branko Stajic</li>
+									<li>Alex Yang Zhu</li>
+									<li>Zach Wan</li>
+									<li>UNSW Sydney</li>
+									<li>Oracle</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/zach-wan-9696671b3/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:zachwankh@gmail.com" target="_blank" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
