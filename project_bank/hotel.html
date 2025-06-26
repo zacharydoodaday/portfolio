@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Zach Wan's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/zedvance_icon.jpg" alt="" /></span><span class="title">Zach Wan's Portfolio</span>
+								</a>
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Hotel Booking System</h1>
+							<p>In this project, an 8x8 array is initialised to represent the rooms of a hotel. Commands can then be input by the user to interact with the hotel.</p>
+							<p>Through this project I was introduced to array manipulation (e.g. adding and removing bookings to specific rooms) and variable status checking (e.g. before adding a new booking to a room, check whether the room is already occupied).
+								Edge cases were a big challenge in this task since many of the individual functions interact with and rely on other factors to produce the correct output. 
+							</p>
+							<span class="image left">
+								<img src="images/hotel initialisation.PNG" alt="" />
+								<p></p>
+								<p>Click below to view the code file located on my GitHub page.</p>
+								<a href="https://github.com/zacharydoodaday/portfolio/blob/main/projects/cs_hotel.c" target="_blank">View Code on GitHub</a>
+							</span>
+							<section>
+								<p>The full list of commands is listed here. Note that a '+' in the commands column represents a follow up input. Also [x][y] coordinates require a space between the two values. For example, '? + [x][y]' means to input '?' and then input '[x] [y]'.</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Command</th>
+												<th>Usage</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>p</td>
+												<td>Print the hotel into the terminal.</td>
+											</tr>
+											<tr>
+												<td>? + [x][y]</td>
+												<td>Check if room [x][y] is occupied.</td>
+											</tr>
+											<tr>
+												<td>a + [x][y]</td>
+												<td>Add a booking to room [x][y].</td>
+											</tr>
+											<tr>
+												<td>l + [x][y]</td>
+												<td>Remove a booking from room [x][y].</td>
+											</tr>
+											<tr>
+												<td>c</td>
+												<td>Print the hotel with prices.</td>
+											</tr>
+											<tr>
+												<td>$ + [n][p]</td>
+												<td>Change the price of all rooms on floor [n] to price [p].</td>
+											</tr>
+											<tr>
+												<td>^ + [p]</td>
+												<td>Change the price of all rooms in the hotel to price [p].</td>
+											</tr>
+											<tr>
+												<td>r</td>
+												<td>Calculate the revenue earned. Adds the prices of occupied rooms together and compares the total to the previous revenue output.</td>
+											</tr>
+											<tr>
+												<td>j</td>
+												<td>Finds the next best room and adds a guest. A 'best room' is defined by the leftmost and uppermost room available.</td>
+											</tr>
+											<tr>
+												<td>s + [x1][y1][x2][y2]</td>
+												<td>Swaps the booking characteristics of rooms [x1][y1] and [x2][y2].</td>
+											</tr>
+											<tr>
+												<td>g + 1 + [n]</td>
+												<td>Add a group booking of [n] rooms to the cheapest and lowest floor.</td>
+											</tr>
+											<tr>
+												<td>g + 2 + [n][p]</td>
+												<td>Add a group booking of [n] rooms within a budget of [p].</td>
+											</tr>
+											<tr>
+												<td>! + [x][y]</td>
+												<td>Add a royal guest to the hotel. A royal guest gets priority over their desired room [x][y], moving any occupants to the next available room.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/zach-wan-9696671b3/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:zachwankh@gmail.com" target="_blank" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
