@@ -1,0 +1,23 @@
+<article class="style2">
+    <span class="image">
+        <img src="images/hotel_cover.png" alt="" />
+    </span>
+    <a href="hotel.html">
+        <h2>Hotel Booking System</h2>
+        <div class="content">
+            <p>C Coding, Arrays, Status Checking, Visual Representation</p>
+        </div>
+    </a>
+</article>
+
+<article class="style6">
+    <span class="image">
+        <img src="images/newspapers_main_img.jpg" alt="" />
+    </span>
+    <a href="news_triad_mining.html">
+        <h2>Big Data - News Headline Mining</h2>
+        <div class="content">
+            <p>Spark RDDs, SQL, Frequency Mining</p>
+        </div>
+    </a>
+</article>
