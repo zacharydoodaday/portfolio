@@ -32,16 +32,53 @@
 						<div class="inner">
 							<h1>AI/ML Football Analysis</h1>
 							<p>
-								In this project I exposed myself to the applications of computer vision. My goal was to learn about some of the techniques used to generate data from video sources. 
-								To achieve this, I utilised the <b>Ultralytics YOLO model and cv2 libraries</b>. The tasks I performed during this project include:
+								In this project I explored the applications of computer vision. My goal was to learn about some of the techniques used to generate data from video sources. 
+								To achieve this, I utilised the <b>Ultralytics YOLO model and cv2 libraries.</b>. The tasks I performed during this project included:
 							</p>
 							<ul>
-								<li>Optimising object detection predictions</li>
-								<li>Designing visual overlays that react to object movement</li>
-								<li>Extracting colour data to enable team assignment</li>
-								<li>Designing proximity data to calculate possession statistics</li>
-								<li>Calculating objects' speed and distance while adjusting for camera movement and persepective</li>
+								<li><u>Optimising object classifications</u>
+									<p>
+										After the initial run of object detection, minor adjustments were made, such as reclassifying goalkeepers as players to reduce the number of distinct object classes.
+										I also designed bounding boxes for each class of object (players, referees, ball) to help track their locations.
+									</p>
+								</li>
+								<li><u>Designing visual overlays that react to object movement</u>
+									<p>
+										Created circular indicators which would follow each object's bounding box and react to their movements. 
+										A triangular indicator was designed to follow the ball.
+									</p>
+								</li>
+								<li><u>Extracting colour data to enable team assignment</u>
+									<p>
+										This was achieved by capturing an image of each player's torso and performing k-means clustering on the image to separate the jersey colour from the background.
+										Players were then assigned to a team based on their jersey colour, and their individual circular overlay colour was matched accordingly. 
+									</p>
+								</li>
+								<li><u>Designing proximity data to calculate possession statistics</u>
+									<p>
+										I determined which player's feet were closest ball's bounding box to infer team possession. 
+										Additionally, since the ball often travelled at speeds faster that what the video's low frame rate could capture, interpolation was used to predict the ball's movement and speed between frames. 
+										The player in possession was also given a triangular indicator to help viewers identify them more easily.
+									</p>
+								</li>
+								<li><u>Calculating objects' speed and distance while adjusting for camera movement and persepective</u>
+									<p>
+										I used the halfway line as a reference to track camera movement, which is represented at the top left of the video. 
+										The tilt of the camera angle was also considered, as the video's perspective did not represent both sides of the field with equal proportions. 
+										This was achieved by assigning greater distance weightings to objects travelling in the area of the field further from the camera.
+										With these adjustments, more accurate speed and distance metrics were calculated and displayed under each player by comparing their positions across frames. 
+									</p>
+								</li>
 							</ul>
+							<h3>
+								Reflection
+							</h3>
+							<p>
+								I learned the basics of computer vision and object detection in a context that I am personally very passionate about. 
+								I also discovered some of the key considerations when using video as a data source such as accounting for the camera's perspective when calculating distance.
+								Improvements can still be made, some of the players on the right-side of the video seem to not display their speed and distance metrics which is unintentional.
+								Overall, I'm very proud of this project and believe that a future role as a video/performance analyst at a sports club would excite me. 
+							</p>
 							<video controls width="854" height="480">
 								<source src="projects/football_analysis_video.mp4" type="video/mp4">
 								Your browser does not support the video tag.
